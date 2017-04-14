@@ -16,9 +16,14 @@ public class animationtriggers : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-	    if (Input.GetKeyDown(KeyCode.A))
+	    if (Input.GetKeyDown(KeyCode.W))
 	    {
 	        animator.SetTrigger("forward");
 	    }
-	}
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            animator.SetTrigger("grab");
+        }
+
+    }
 }
