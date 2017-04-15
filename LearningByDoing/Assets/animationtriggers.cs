@@ -15,15 +15,36 @@ public class animationtriggers : MonoBehaviour
 	}
 	
 	// Update is called once per frame
-	void Update () {
-	    if (Input.GetKeyDown(KeyCode.W))
+	void Update ()
+	{
+
+	    float h = Input.GetAxis("Horizontal");
+	    float v = Input.GetAxis("Vertical");
+        animator.SetFloat("Speed", v);
+        animator.SetFloat("Direction", h);
+
+	    if (Input.GetKeyDown(KeyCode.DownArrow))
 	    {
-	        animator.SetTrigger("forward");
+	        v = v - 0.1f;
 	    }
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            animator.SetTrigger("grab");
+            h = h + 0.1f;
         }
 
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            h = h - 0.1f;
+        }
+
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            v = v + 0.1f;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            animator.SetTrigger("Jump");
+        }
     }
 }
