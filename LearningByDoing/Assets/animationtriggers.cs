@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,17 +16,32 @@ public class animationtriggers : MonoBehaviour
     private Canvas GUI;
     private int healthStat;
     private bool alive;
+    
+    private Canvas GUI_kafu;
+    private Image healthbar;
+    
 	// Use this for initialization
 	void Start () {
 		avatar = GameObject.Find("DefaultAvatar");
 	    animator = GetComponent<Animator>();
 	    currentHealth = fullHealth;
         greenBar = GameObject.Find("fill - full health");
-	    GUI = GameObject.FindObjectOfType<Canvas>();
+	    GUI = GameObject.Find("GUI").GetComponent<Canvas>();
 	    healthText = GUI.GetComponentInChildren<Text>();
 	    healthStat = 100;
 	    alive = true;
+        
+        GUI_kafu = GameObject.Find("GUI_KaFu_canvas").GetComponent<Canvas>();
+        healthbar = GameObject.Find("fill_content").GetComponent<Image>();
 	}
+    
+    void getTiredAndIll() {
+        float health = healthbar.fillAmount;
+        if(0 <= health && health <=1) {
+            Debug.Log(health);
+            healthbar.fillAmount -= 0.01f; 
+        }
+    }
 
     void DamageHealth()
     {
@@ -55,8 +70,7 @@ public class animationtriggers : MonoBehaviour
 
 
 
-    void updateHealth()
-    {
+    void updateHealth() {
         if ((healthStat > 0) && (alive))
         {
             healthStat = Convert.ToInt32((currentHealth / fullHealth) * 100);
@@ -65,14 +79,15 @@ public class animationtriggers : MonoBehaviour
 
     }
     // Update is called once per frame
-    void Update ()
-    {
+    void Update () {
         updateHealth();
        
 	    float h = Input.GetAxis("Horizontal");
 	    float v = Input.GetAxis("Vertical");
         animator.SetFloat("Speed", v);
         animator.SetFloat("Direction", h);
+        
+        float v_check = v;
 
 	    if (Input.GetKeyDown(KeyCode.S))
 	    {
@@ -89,7 +104,7 @@ public class animationtriggers : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.W))
-        {
+        {   
             v = v + 0.001f;
         }
 
@@ -107,8 +122,19 @@ public class animationtriggers : MonoBehaviour
         {
             animator.SetTrigger("wave");
         }
-
-
+        
+        if(Input.GetKeyDown("1")) {
+            animator.SetLayerWeight(1, 1f);
+            animator.SetBool("waving", true);
+        } 
+        if(Input.GetKeyUp("1")){
+            animator.SetBool("waving", false);
+        }
+        
+        if(v_check != v) {
+            getTiredAndIll();   
+            Debug.Log("get tired");
+        }
     }
 
     void OnCollisionEnter(Collision col)
