@@ -125,15 +125,14 @@ public class animationtriggers : MonoBehaviour
         
         if(Input.GetKeyDown("1")) {
             animator.SetLayerWeight(1, 1f);
-            animator.SetBool("waving", true);
+            animator.SetBool("eating", true);
         } 
         if(Input.GetKeyUp("1")){
-            animator.SetBool("waving", false);
+            animator.SetBool("eating", false);
         }
         
         if(v_check != v) {
             getTiredAndIll();   
-            Debug.Log("get tired");
         }
     }
 
