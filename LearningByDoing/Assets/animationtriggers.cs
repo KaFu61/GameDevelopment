@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,7 +18,7 @@ public class animationtriggers : MonoBehaviour
     private bool alive;
 	// Use this for initialization
 	void Start () {
-		avatar = GameObject.Find("DefaultAvatar");
+		avatar = GameObject.Find("Fatty");
 	    animator = GetComponent<Animator>();
 	    currentHealth = fullHealth;
         greenBar = GameObject.Find("fill - full health");
@@ -107,7 +107,21 @@ public class animationtriggers : MonoBehaviour
         {
             animator.SetTrigger("wave");
         }
-
+        
+        if(Input.GetKeyDown(KeyCode.E)){
+            animator.SetLayerWeight(1, 1f);
+            animator.SetBool("eating", true);
+        }
+        if(Input.GetKeyUp(KeyCode.E)){
+            animator.SetBool("eating", false);
+        }
+        
+        if(Input.GetKeyDown(KeyCode.R)){
+            animator.SetBool("harvesting", true);
+        }
+        if(Input.GetKeyUp(KeyCode.R)){
+            animator.SetBool("harvesting", false);
+        }
 
     }
 

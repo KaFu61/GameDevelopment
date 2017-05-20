@@ -12,8 +12,8 @@ public class ThirdPersonCamera : MonoBehaviour
 		// initialising references
 		standardPos = GameObject.Find ("Camera").transform;
 		
-		if(GameObject.Find ("DefaultAvatar"))
-			lookAtPos = GameObject.Find ("DefaultAvatar").transform;
+		if(GameObject.Find ("Fatty"))
+			lookAtPos = GameObject.Find ("Fatty").transform;
 	}
 	
 	void FixedUpdate ()
