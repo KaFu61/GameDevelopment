@@ -8,6 +8,7 @@ public class animationtriggers : MonoBehaviour
 {
 
     private GameObject avatar;
+    private Transform fattyTransform;
     private Animator animator;
     public float fullHealth;
     public float currentHealth;
@@ -16,6 +17,7 @@ public class animationtriggers : MonoBehaviour
     private Canvas GUI;
     private int healthStat;
     private bool alive;
+    private float speed;
 	// Use this for initialization
 	void Start () {
 		avatar = GameObject.Find("Fatty");
@@ -26,6 +28,9 @@ public class animationtriggers : MonoBehaviour
 	    healthText = GUI.GetComponentInChildren<Text>();
 	    healthStat = 100;
 	    alive = true;
+	    fattyTransform = avatar.GetComponent<Transform>();
+	    speed = 0.05f;
+
 	}
 
     void DamageHealth()
@@ -68,19 +73,26 @@ public class animationtriggers : MonoBehaviour
     void Update ()
     {
         updateHealth();
+
        
-	    float h = Input.GetAxis("Horizontal");
+        
+        float h = Input.GetAxis("Horizontal");
 	    float v = Input.GetAxis("Vertical");
+
+        fattyTransform.Translate(new Vector3(h * speed, 0, v * speed));
+
         animator.SetFloat("Speed", v);
         animator.SetFloat("Direction", h);
 
 	    if (Input.GetKeyDown(KeyCode.S))
 	    {
 	        v = v - 0.001f;
+           
 	    }
         if (Input.GetKeyDown(KeyCode.A))
         {
             h = h + 0.001f;
+
         }
 
         if (Input.GetKeyDown(KeyCode.D))
@@ -110,18 +122,13 @@ public class animationtriggers : MonoBehaviour
         
         if(Input.GetKeyDown(KeyCode.E)){
             animator.SetLayerWeight(1, 1f);
-            animator.SetBool("eating", true);
-        }
-        if(Input.GetKeyUp(KeyCode.E)){
-            animator.SetBool("eating", false);
+            animator.SetTrigger("eat");
         }
         
         if(Input.GetKeyDown(KeyCode.R)){
-            animator.SetBool("harvesting", true);
+            animator.SetTrigger("pick");
         }
-        if(Input.GetKeyUp(KeyCode.R)){
-            animator.SetBool("harvesting", false);
-        }
+   
 
     }
 
@@ -133,6 +140,15 @@ public class animationtriggers : MonoBehaviour
         }
         if (col.gameObject.tag == "food")
         {
+            animator.SetLayerWeight(1, 1f);
+            animator.SetTrigger("eat");
+            Heal();
+        }
+
+        if (col.gameObject.tag == "hangingfood")
+        {
+            animator.SetLayerWeight(1, 1f);
+            animator.SetTrigger("pick");
             Heal();
         }
 

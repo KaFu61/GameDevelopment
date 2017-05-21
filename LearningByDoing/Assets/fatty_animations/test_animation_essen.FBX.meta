@@ -192,7 +192,19 @@ ModelImporter:
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\n\t'Bip001 Spine2' has translation animation
+      that will be discarded.\n\t'Bip001 Neck' has translation animation that will
+      be discarded.\n\t'Bip001 Head' has translation animation that will be discarded.\n\t'Bip001
+      R Clavicle' has translation animation that will be discarded.\n\t'Bip001 R UpperArm'
+      has translation animation that will be discarded.\n\t'Bip001 R Forearm' has
+      translation animation that will be discarded.\n\t'Bip001 R Hand' has translation
+      animation that will be discarded.\n\t'Bip001 L Thigh' has translation animation
+      that will be discarded.\n\t'Bip001 L Calf' has translation animation that will
+      be discarded.\n\t'Bip001 L Foot' has translation animation that will be discarded.\n\t'Bip001
+      R Thigh' has translation animation that will be discarded.\n\t'Bip001 R Calf'
+      has translation animation that will be discarded.\n\t'Bip001 R Foot' has translation
+      animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     animationCompression: 3
@@ -201,7 +213,267 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1160
+      lastFrame: 1874
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 1
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bip001
+        weight: 1
+      - path: Bip001/Bip001 Footsteps
+        weight: 0
+      - path: Bip001/Bip001 Pelvis
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 L Thigh
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 L Thigh/Bip001 L Calf
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 L Thigh/Bip001 L Calf/Bip001 L Foot
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 L Thigh/Bip001 L Calf/Bip001 L Foot/Bip001
+          L Toe0
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 L Thigh/Bip001 L Calf/Bip001 L Foot/Bip001
+          L Toe0/Bip001 L Toe0Nub
+        weight: 0
+      - path: Bip001/Bip001 Pelvis/Bip001 R Thigh
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 R Thigh/Bip001 R Calf
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 R Thigh/Bip001 R Calf/Bip001 R Foot
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 R Thigh/Bip001 R Calf/Bip001 R Foot/Bip001
+          R Toe0
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 R Thigh/Bip001 R Calf/Bip001 R Foot/Bip001
+          R Toe0/Bip001 R Toe0Nub
+        weight: 0
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          L Clavicle
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          L Clavicle/Bip001 L UpperArm
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          L Clavicle/Bip001 L UpperArm/Bip001 L Forearm
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001 L Finger0
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001 L Finger0/Bip001
+          L Finger0Nub
+        weight: 0
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001 L Finger1
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001 L Finger1/Bip001
+          L Finger1Nub
+        weight: 0
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001 L Finger2
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001 L Finger2/Bip001
+          L Finger2Nub
+        weight: 0
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001 L Finger3
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001 L Finger3/Bip001
+          L Finger3Nub
+        weight: 0
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001 L Finger4
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001 L Finger4/Bip001
+          L Finger4Nub
+        weight: 0
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 Head
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 Head/Bip001 HeadNub
+        weight: 0
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          R Clavicle
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          R Clavicle/Bip001 R UpperArm
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          R Clavicle/Bip001 R UpperArm/Bip001 R Forearm
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001 R Finger0
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001 R Finger0/Bip001
+          R Finger0Nub
+        weight: 0
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001 R Finger1
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001 R Finger1/Bip001
+          R Finger1Nub
+        weight: 0
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001 R Finger2
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001 R Finger2/Bip001
+          R Finger2Nub
+        weight: 0
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001 R Finger3
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001 R Finger3/Bip001
+          R Finger3Nub
+        weight: 0
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001 R Finger4
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001 R Finger4/Bip001
+          R Finger4Nub
+        weight: 0
+      - path: Box002
+        weight: 0
+      - path: Character 1_Ctrl:Reference
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:ChestEndEffector
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:ChestOriginEffector
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:HeadEffector
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:Hips
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:Hips/Character 1_Ctrl:LeftUpLeg
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:Hips/Character 1_Ctrl:LeftUpLeg/Character
+          1_Ctrl:LeftLeg
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:Hips/Character 1_Ctrl:LeftUpLeg/Character
+          1_Ctrl:LeftLeg/Character 1_Ctrl:LeftFoot
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:Hips/Character 1_Ctrl:RightUpLeg
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:Hips/Character 1_Ctrl:RightUpLeg/Character
+          1_Ctrl:RightLeg
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:Hips/Character 1_Ctrl:RightUpLeg/Character
+          1_Ctrl:RightLeg/Character 1_Ctrl:RightFoot
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:Hips/Character 1_Ctrl:Spine
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:Hips/Character 1_Ctrl:Spine/Character
+          1_Ctrl:LeftShoulder
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:Hips/Character 1_Ctrl:Spine/Character
+          1_Ctrl:LeftShoulder/Character 1_Ctrl:LeftArm
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:Hips/Character 1_Ctrl:Spine/Character
+          1_Ctrl:LeftShoulder/Character 1_Ctrl:LeftArm/Character 1_Ctrl:LeftForeArm
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:Hips/Character 1_Ctrl:Spine/Character
+          1_Ctrl:LeftShoulder/Character 1_Ctrl:LeftArm/Character 1_Ctrl:LeftForeArm/Character
+          1_Ctrl:LeftHand
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:Hips/Character 1_Ctrl:Spine/Character
+          1_Ctrl:Neck
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:Hips/Character 1_Ctrl:Spine/Character
+          1_Ctrl:Neck/Character 1_Ctrl:Neck1
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:Hips/Character 1_Ctrl:Spine/Character
+          1_Ctrl:Neck/Character 1_Ctrl:Neck1/Character 1_Ctrl:Head
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:Hips/Character 1_Ctrl:Spine/Character
+          1_Ctrl:RightShoulder
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:Hips/Character 1_Ctrl:Spine/Character
+          1_Ctrl:RightShoulder/Character 1_Ctrl:RightArm
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:Hips/Character 1_Ctrl:Spine/Character
+          1_Ctrl:RightShoulder/Character 1_Ctrl:RightArm/Character 1_Ctrl:RightForeArm
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:Hips/Character 1_Ctrl:Spine/Character
+          1_Ctrl:RightShoulder/Character 1_Ctrl:RightArm/Character 1_Ctrl:RightForeArm/Character
+          1_Ctrl:RightHand
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:HipsEffector
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:LeftAnkleEffector
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:LeftElbowEffector
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:LeftHipEffector
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:LeftKneeEffector
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:LeftShoulderEffector
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:LeftWristEffector
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:RightAnkleEffector
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:RightElbowEffector
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:RightHipEffector
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:RightKneeEffector
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:RightShoulderEffector
+        weight: 0
+      - path: Character 1_Ctrl:Reference/Character 1_Ctrl:RightWristEffector
+        weight: 0
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
