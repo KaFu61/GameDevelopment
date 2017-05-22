@@ -140,6 +140,8 @@ public class animationtriggers : MonoBehaviour
         }
         if (col.gameObject.tag == "food")
         {
+            //col.gameObject.GetComponent<Renderer>().enabled = false;
+            Destroy(col.gameObject);
             animator.SetLayerWeight(1, 1f);
             animator.SetTrigger("eat");
             Heal();
@@ -147,6 +149,8 @@ public class animationtriggers : MonoBehaviour
 
         if (col.gameObject.tag == "hangingfood")
         {
+            //col.gameObject.GetComponent<Renderer>().enabled = false;
+            Destroy(col.gameObject);
             animator.SetLayerWeight(1, 1f);
             animator.SetTrigger("pick");
             Heal();
@@ -154,13 +158,13 @@ public class animationtriggers : MonoBehaviour
 
     }
 
-    void OnTriggerEnter(Collider col)
-    {
-        if (col.tag == "floor")
-        {
-            healthText.text = "DEAD";
-            greenBar.transform.localScale = new Vector3(0, 1, 1);
-            alive = false;
-        }
-    }
+    //void OnTriggerEnter(Collider col)
+    //{
+    //    if (col.tag == "floor")
+    //    {
+    //        healthText.text = "DEAD";
+    //        greenBar.transform.localScale = new Vector3(0, 1, 1);
+    //        alive = false;
+    //    }
+    //}
 }
